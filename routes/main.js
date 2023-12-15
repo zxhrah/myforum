@@ -48,9 +48,7 @@ module.exports = function(app) {
                 res.render('postsForTopic.ejs', { posts: posts });
             }
         });
-    });
-    
-    
+    });    
     app.get('/users', function(req, res) {
         let sqlquery = "SELECT * FROM user"; // Select the 'topic' column from the 'posts' table
         // execute sql query
@@ -60,6 +58,21 @@ module.exports = function(app) {
             } else {
                 console.log(result);
                 res.render('users.ejs', {users:result})
+            }
+        });
+    });
+    app.get('/users/:userId', function(req, res) {
+        let userId = req.params.userId; //the topic id which is in url is used to find the posts under that topic within the posts table.
+        let sqlQuery = "SELECT * FROM post WHERE user_id = ?";
+        //using the sql the posts are retrieved
+        db.query(sqlQuery, [userId], (err, posts) => {
+            if (err) {
+                console.error(err);
+                // if there is an error this message will display
+                res.send('Error fetching posts for the specified user.');
+            } else {
+                // renders the html page and displayed all the posts associated with the topic selected
+                res.render('postsForUser.ejs', { posts: posts });
             }
         });
     });
