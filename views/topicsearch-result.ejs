@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to My Forum</title>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>topic</h1>
+    <ul>
+      <% topics.forEach(function(topic) { %>
+        <li><%= topic.topicname %></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

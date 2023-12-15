@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Welcome to My Forum</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Posts</h1>
+    <ul>
+        <% posts.forEach(function(post){%> 
+        <li>"<%=post.text %>"</li>
+        <% }) %>
+    </ul>
+  </body>
+</html>

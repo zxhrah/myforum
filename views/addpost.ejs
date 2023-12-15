@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <link rel="stylesheet" type="text/css" href="/main.css" />
+    </head>
+    <body>
+    <h1>Add a post</h1>
+    <form action="/postadded" method="POST">
+        <fieldset style="width:230px; height:370px;">
+        <legend>Create your post</legend>
+        <p><label for="username">Username:</label></p>
+        <p><input id="username" type="text" name="username" value="" /></p>
+        <p><label for="topic">Topic:</label></p>
+        <p><input id="topic" type="text" name="topic" value="" /></p>
+        <p><label for="text">Post Message:</label></p>
+        <p><textarea id="text" type="text" name="text" style="width:165px; height:100px;"></textarea></p>
+        <p><input type="submit" value="Add Post" /></p>
+        </fieldset>
+    </form>
+    </body>
+</html>

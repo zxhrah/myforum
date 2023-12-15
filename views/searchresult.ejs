@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Books Listed in</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <h1>Search Results in</h1>
+    <h2>Your search results matched to:</h2>
+    <ul>
+        <% posts.forEach(function(post){%> 
+            <li>"<%=post.text %>": <%=post.topicname %></li>
+            <% }) %>
+    </ul>
+  </body>
+</html>
