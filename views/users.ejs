@@ -8,7 +8,6 @@
     <h1>Users</h1>
     <ul>
       <% users.forEach(function(user) { %>
-        <!-- <li><%= user.username %>: <%= user.email %></li> -->
         <li><a href="/users/<%= user.user_id %>"><%= user.username %>: <%= user.email %></a></li>
       <% }) %>
     </ul>
