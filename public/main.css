@@ -1,7 +1,7 @@
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: darkcyan;
+    color: navy;
 }
 
 h2 {
@@ -15,14 +15,14 @@ p,li {
 }
 
 a:link {
-    color: orangered;
+    color: plum;
     text-decoration: none;
     padding:5px;
   }
   
   /* visited link */
   a:visited {
-    color: tomato;
+    color: blueviolet;
     text-decoration: none;
     padding:5px;
   }
@@ -31,7 +31,7 @@ a:link {
   a:hover {
     color: white;
     text-decoration: none;
-    background-color: orangered;
+    background-color: palevioletred;
     padding:5px;
   }
   

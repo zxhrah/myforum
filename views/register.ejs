@@ -5,13 +5,19 @@
     <link rel="stylesheet"  type="text/css" href="/main.css" />
   </head>
   <body>
-    <h1>Register</h1>
+    <h1>Register with us</h1>
     <form method="POST" action="/registered">
-        <p>Name: <input id="name" type="text" name="name" value="" /></p><!--user's first name-->
-        <p>Username: <input id="username" type="text" name="username" value="" /></p><!--the user's last name-->
-        <p>Email: <input id="email" type="email" name="email" value="" /></p><!--the user's email address-->
+        <fieldset style="width:230px; height:290px;">
+        <legend>Enter your details:</legend>
+        <p><label for="name">Name:</label></p>
+        <p><input id="name" type="text" name="name" value="" /></p><!--user's first name-->
+        <p><label for="username">Username:</label></p>
+        <p><input id="username" type="text" name="username" value="" /></p><!--the user's chosen username-->
+        <p><label for="email">Email:</label></p>
+        <p><input id="email" type="email" name="email" value="" /></p><!--the user's email address-->
         <input type="submit" value="Register" />
-        <input type="reset" value="Reset">
+        <input type="reset" value="Clear">
+        </fieldset>
       </form>
   </body>
 </html>
