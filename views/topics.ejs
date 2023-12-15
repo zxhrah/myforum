@@ -6,6 +6,7 @@
 </head>
 <body>
     <h1>Topics</h1>
+    <!-- the topics are listed and each topic a href which takes it to another html which lists all the posts relevant to that topic -->
     <ul>
         <% topics.forEach(function(topic) { %>
             <li><a href="/topic/<%= topic.topic_id %>"><%= topic.topicname %></a></li>
